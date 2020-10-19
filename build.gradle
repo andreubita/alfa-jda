@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.andreubita'
+mainClassName = 'com.andreubita.alfajda.Bot'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.jagrosh:jda-utilities:3.0.4'
+    compile 'net.dv8tion:JDA:4.2.0_209'
+    compile 'io.github.cdimascio:java-dotenv:5.1.3'
+}
